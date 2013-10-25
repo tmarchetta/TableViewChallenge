@@ -14,13 +14,13 @@
 		BEDF9383181AB3180077C1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF9382181AB3180077C1CF /* main.m */; };
 		BEDF9387181AB3180077C1CF /* TMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF9386181AB3180077C1CF /* TMSAppDelegate.m */; };
 		BEDF938A181AB3180077C1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDF9388181AB3180077C1CF /* Main.storyboard */; };
-		BEDF938D181AB3180077C1CF /* TMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF938C181AB3180077C1CF /* TMSViewController.m */; };
 		BEDF938F181AB3180077C1CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDF938E181AB3180077C1CF /* Images.xcassets */; };
 		BEDF9396181AB3180077C1CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDF9395181AB3180077C1CF /* XCTest.framework */; };
 		BEDF9397181AB3180077C1CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDF9376181AB3180077C1CF /* Foundation.framework */; };
 		BEDF9398181AB3180077C1CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDF937A181AB3180077C1CF /* UIKit.framework */; };
 		BEDF93A0181AB3180077C1CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEDF939E181AB3180077C1CF /* InfoPlist.strings */; };
 		BEDF93A2181AB3180077C1CF /* TableView_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF93A1181AB3180077C1CF /* TableView_ChallengeTests.m */; };
+		BEDF93AD181AB3790077C1CF /* TMSChallangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF93AC181AB3790077C1CF /* TMSChallangeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		BEDF9385181AB3180077C1CF /* TMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSAppDelegate.h; sourceTree = "<group>"; };
 		BEDF9386181AB3180077C1CF /* TMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSAppDelegate.m; sourceTree = "<group>"; };
 		BEDF9389181AB3180077C1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BEDF938B181AB3180077C1CF /* TMSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSViewController.h; sourceTree = "<group>"; };
-		BEDF938C181AB3180077C1CF /* TMSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSViewController.m; sourceTree = "<group>"; };
 		BEDF938E181AB3180077C1CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEDF9394181AB3180077C1CF /* TableView ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableView ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDF9395181AB3180077C1CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BEDF939D181AB3180077C1CF /* TableView ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableView ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		BEDF939F181AB3180077C1CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEDF93A1181AB3180077C1CF /* TableView_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView_ChallengeTests.m; sourceTree = "<group>"; };
+		BEDF93AB181AB3790077C1CF /* TMSChallangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMSChallangeViewController.h; path = ../TMSChallangeViewController.h; sourceTree = "<group>"; };
+		BEDF93AC181AB3790077C1CF /* TMSChallangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMSChallangeViewController.m; path = ../TMSChallangeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,11 @@
 		BEDF937C181AB3180077C1CF /* TableView Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				BEDF93AB181AB3790077C1CF /* TMSChallangeViewController.h */,
+				BEDF93AC181AB3790077C1CF /* TMSChallangeViewController.m */,
 				BEDF9385181AB3180077C1CF /* TMSAppDelegate.h */,
 				BEDF9386181AB3180077C1CF /* TMSAppDelegate.m */,
 				BEDF9388181AB3180077C1CF /* Main.storyboard */,
-				BEDF938B181AB3180077C1CF /* TMSViewController.h */,
-				BEDF938C181AB3180077C1CF /* TMSViewController.m */,
 				BEDF938E181AB3180077C1CF /* Images.xcassets */,
 				BEDF937D181AB3180077C1CF /* Supporting Files */,
 			);
@@ -252,7 +252,7 @@
 			files = (
 				BEDF9383181AB3180077C1CF /* main.m in Sources */,
 				BEDF9387181AB3180077C1CF /* TMSAppDelegate.m in Sources */,
-				BEDF938D181AB3180077C1CF /* TMSViewController.m in Sources */,
+				BEDF93AD181AB3790077C1CF /* TMSChallangeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

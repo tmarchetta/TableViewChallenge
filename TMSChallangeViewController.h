@@ -1,5 +1,5 @@
 //
-//  TMSViewController.h
+//  TMSChallangeViewController.h
 //  TableView Challenge
 //
 //  Created by Theresa Marchetta on 10/25/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TMSViewController : UIViewController
+@interface TMSChallangeViewController : UITableViewController
 
 @end
