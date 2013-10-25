@@ -42,26 +42,57 @@
 
 #pragma mark - Table view data source
 
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    //Problem 4: Adjust the data source methods numberOfSectionsInTableView: and numberOfRowsInSection:. The TableView should display three sections:
+        //Section 0 should have 2 rows
+        //Section 1 should have 1 row
+        //Section 2 should have 3 rows
+    
+   if (section == 0) return 2;
+   else if (section == 1) return 1;
+   else if (section == 2) return 3;
+   else return 0;
+    
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    //Section 1's cells should display the text “I am in section 0”.
+    //Section 2's cells should display “another section”.
+    //Section 3's cells  should display the word cell and the current row number. Use a format string and pass in NSIndexPath’s property row.
+    //Extra Credit: Update the cell’s textColor for section 1 to be red, the cells in section 2 should be blue, and cells in section 3 should be yellow.
+
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    if (indexPath.section ==0){
+        cell.textLabel.text = [NSString stringWithFormat: @"I am in section %i", indexPath.section];
+        cell.textLabel.textColor = [UIColor redColor];
+        }
+    if (indexPath.section == 1){
+        cell.textLabel.text = [NSString stringWithFormat:@"another section"];
+        cell.textLabel.textColor = [UIColor blueColor];
+        }
+    if (indexPath.section == 2){
+        cell.textLabel.text = [NSString stringWithFormat:@"cell %i", indexPath.row];
+        cell.textLabel.textColor = [UIColor yellowColor];
+        }
     
     return cell;
 }
